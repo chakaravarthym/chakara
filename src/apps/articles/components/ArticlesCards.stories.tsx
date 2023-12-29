@@ -15,8 +15,8 @@ const stories: Meta = {
     },
     imgPath: {
       control: 'select',
-      options: ['hello.jpg', 'logo.png'],
-      description: 'Please Update the Title Text.',
+      options: ['No Image', 'hello.jpg', 'articles_bg.jpg'],
+      description: 'Please Choose the Background Image.',
       table: {
         defaultValue: { summary: 'No Image' },
       },
@@ -25,28 +25,33 @@ const stories: Meta = {
       control: 'color',
       description: 'Please choose the Text color.',
       table: {
-        defaultValue: { summary: '333333' },
+        defaultValue: { summary: 'fff' },
       },
     },
     title: {
-      control: 'text',
-      description: 'Please choose the Title color.',
+      description: 'Please Update the Descriptions Text. ',
       table: {
-        defaultValue: { summary: '333333' },
+        defaultValue: { summary: 'Descriptions' },
+      },
+    },
+    heading: {
+      description: 'Please Update the Heading Text.',
+      table: {
+        defaultValue: { summary: 'Heading' },
       },
     },
   },
   args: {
     backgroundColor: '#5a7c55',
-    textColor: '#333',
+    textColor: '#fff',
   },
 };
 
 const Template: StoryFn = (args) => <ArticlesCards {...args} />;
 export const Articles = Template.bind({});
 Articles.args = {
-  title: 'Title',
-  heading: 'Heading',
+  title: 'Articles descritions',
+  heading: 'Article Heading',
 };
 
 export default stories;

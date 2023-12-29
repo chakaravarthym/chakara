@@ -1,10 +1,8 @@
 import React, { CSSProperties, ReactElement } from 'react';
 interface CardProps {
-  /** Please Update the Heading Text. */
   heading: string;
   backgroundColor: string;
   imgPath: string;
-  /** Please Update the Title Text. */
   title: string;
   textColor: string;
 }
@@ -15,10 +13,11 @@ const styles: Record<string, CSSProperties> = {
     boxShadow: '0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1)',
     fontFamily: 'helvetica, sans-serif',
     overflow: 'hidden',
-    maxWidth: '13rem',
+    maxWidth: '63rem',
     height: '26rem',
     position: 'relative',
     backgroundSize: '100%',
+    backgroundRepeat: 'no-repeat',
     wordWrap: 'break-word',
   },
   cardContainer: {

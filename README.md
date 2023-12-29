@@ -1,7 +1,3 @@
-**NOTE:** this repository is meant to be forked under your organization / user
-account. After forking try to get it deploying to GitHub pages and read the
-documentation there.
-
 ---
 
 ## Contribute
