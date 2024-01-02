@@ -1,9 +1,9 @@
 module.exports = {
-  entry: './src/apps/articles/index.tsx',
-  shortcode: 'earticles',
-  title: 'Articles Cards',
+  entry: './src/apps/banner/index.tsx',
+  shortcode: 'banner',
+  title: 'Banner Cards',
   status: 'stable',
-  description: 'Incredible articles trading cards',
+  description: 'Incredible banner trading cards',
   preview: {
     url: `${process.env.PUBLIC_URL}/storybook/iframe.html?id=widgets-emoji-cards-components--cat&viewMode=story`,
   },
@@ -16,7 +16,7 @@ module.exports = {
         properties: {
           emoji: {
             type: 'string',
-            title: 'Articles code',
+            title: 'Banner code',
             description: 'The name of the articles to display.',
             examples: ['the_horns', 'pinching_hand'],
           },

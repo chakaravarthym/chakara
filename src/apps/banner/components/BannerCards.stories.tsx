@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import ArticlesCards from './ArticlesCards';
+import BannerCards from './BannerCards';
 
 const stories: Meta = {
-  title: 'Widgets/Articles Cards/Components',
-  component: ArticlesCards,
+  title: 'Widgets/Banner Cards/Components',
+  component: BannerCards,
   argTypes: {
     backgroundColor: {
       control: 'color',
@@ -47,11 +47,11 @@ const stories: Meta = {
   },
 };
 
-const Template: StoryFn = (args) => <ArticlesCards {...args} />;
-export const Articles = Template.bind({});
-Articles.args = {
-  title: 'Articles descritions',
-  heading: 'Article Heading',
+const Template: StoryFn = (args) => <BannerCards {...args} />;
+export const Banner = Template.bind({});
+Banner.args = {
+  title: 'Banner descritions',
+  heading: 'Banner Heading',
 };
 
 export default stories;

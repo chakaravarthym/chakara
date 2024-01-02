@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import 'regenerator-runtime/runtime';
 import { IntlProvider } from 'react-intl';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
-import ArticlesCards from './components/ArticlesCards';
+import BannerCards from './components/BannerCards';
 import widgetDefinition from './EmojiCards.widget';
 
 import { RenderFn } from '../../types/widgets';
+import BannerCards from './components/BannerCards';
 
 const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages } = await normalizeWidgetInput(
@@ -19,7 +20,7 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   }
   ReactDOM.render(
     <IntlProvider locale={locale} messages={messages}>
-      <ArticlesCards />
+      <BannerCards />
     </IntlProvider>,
     element,
     () => cb(element),

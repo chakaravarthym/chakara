@@ -52,7 +52,7 @@ const styles: Record<string, CSSProperties> = {
   },
 };
 
-const ArticlesCards = ({
+const BannerCards = ({
   heading,
   title,
   textColor,
@@ -73,4 +73,4 @@ const ArticlesCards = ({
   </div>
 );
 
-export default ArticlesCards;
+export default BannerCards;
