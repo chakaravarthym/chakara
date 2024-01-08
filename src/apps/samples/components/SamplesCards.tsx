@@ -52,7 +52,7 @@ const styles: Record<string, CSSProperties> = {
   },
 };
 
-const BannerCards = ({
+const SamplesCards = ({
   heading,
   title,
   textColor,
@@ -62,7 +62,7 @@ const BannerCards = ({
   <div
     style={{
       ...styles.card,
-      backgroundImage: `url(${process.env.PUBLIC_ASSETS_URL}/banner/images/${imgPath})`,
+      backgroundImage: `url(${imgPath})`,
       backgroundColor,
     }}
   >
@@ -73,4 +73,4 @@ const BannerCards = ({
   </div>
 );
 
-export default BannerCards;
+export default SamplesCards;
